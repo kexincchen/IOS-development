@@ -14,8 +14,9 @@ class ViewController: UIViewController {
     let icon_dislike: String = "Icon_Dislike"
     let icon_dislike_pressed: String = "Icon_Dislike_pressed"
     let gallery_icon: String = "Icon_Gallery"
+    
 
-    @IBOutlet weak var background: UIImageView!
+    @IBOutlet weak var background: UIImageView?
     @IBOutlet weak var gallery_button: UIButton?
     @IBOutlet weak var button_like: UIButton?
     @IBOutlet weak var button_dislike: UIButton?
@@ -26,6 +27,9 @@ class ViewController: UIViewController {
         button_dislike?.setImage(UIImage(named: icon_dislike), for: .normal)
         gallery_button?.setImage(UIImage(named: gallery_icon), for: .normal)
         // Do any additional setup after loading the view.
+        
+//        background?.image = UIImage(named: "photo1")
+
     }
     
 

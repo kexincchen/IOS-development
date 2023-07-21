@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "47BA3AF6-BE8A-4677-8BAE-6CBC53F1A0BA"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1CF16812-C14B-4795-BEAF-00708712B147"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ios-development-cpu/GalleryViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "1CF16812-C14B-4795-BEAF-00708712B147 - 1f138e11491e44a5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ios_development_cpu.GalleryViewController.gallery_photos.getter : Swift.Array&lt;__C.UIImage&gt;"
+                  moduleName = "ios-development-cpu"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/clarec/Documents/GitHub/IOS-development/ios-development-cpu/GalleryViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "1CF16812-C14B-4795-BEAF-00708712B147 - 1605a2c580dfc4d1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ios_development_cpu.GalleryViewController.gallery_photos.setter : Swift.Array&lt;__C.UIImage&gt;"
+                  moduleName = "ios-development-cpu"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/clarec/Documents/GitHub/IOS-development/ios-development-cpu/GalleryViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "112">
+               </Location>
+               <Location
+                  uuid = "1CF16812-C14B-4795-BEAF-00708712B147 - 5fd2a0329cc494a0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ios_development_cpu.GalleryViewController.gallery_photos.modify : Swift.Array&lt;__C.UIImage&gt;"
+                  moduleName = "ios-development-cpu"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/clarec/Documents/GitHub/IOS-development/ios-development-cpu/GalleryViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "1CF16812-C14B-4795-BEAF-00708712B147 - 1c3a49cffbdbcb8d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ios_development_cpu.GalleryViewController.gallery_photos.modify : Swift.Array&lt;__C.UIImage&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "ios-development-cpu"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/clarec/Documents/GitHub/IOS-development/ios-development-cpu/GalleryViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "1CF16812-C14B-4795-BEAF-00708712B147 - 59a23a5d1a93a5da"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ios_development_cpu.GalleryViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; ios_development_cpu.GalleryViewController"
+                  moduleName = "ios-development-cpu"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/clarec/Documents/GitHub/IOS-development/ios-development-cpu/GalleryViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "492">
+               </Location>
+               <Location
+                  uuid = "1CF16812-C14B-4795-BEAF-00708712B147 - 386d9a4c41414e62"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ios_development_cpu.GalleryViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;ios_development_cpu.GalleryViewController&gt;"
+                  moduleName = "ios-development-cpu"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/clarec/Documents/GitHub/IOS-development/ios-development-cpu/GalleryViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "468">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C172FF79-C446-42B2-BD3B-78F4E1C3EE24"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ios-development-cpu/AppDelegate.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "application(_:didFinishLaunchingWithOptions:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
