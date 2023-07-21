@@ -11,7 +11,7 @@
         <!--Gallery-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="GalleryViewController" customModule="ios_development_cpu" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LISTVC" id="BYZ-38-t0r" customClass="GalleryViewController" customModule="ios_development_cpu" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MZW-aI-1Rq">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -48,16 +48,37 @@
                             <constraint firstItem="Scj-pN-tWO" firstAttribute="leading" secondItem="Nky-wI-T82" secondAttribute="leading" id="iBK-15-15L"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Gallery" id="ciH-2S-GP1">
-                        <barButtonItem key="rightBarButtonItem" title="Item" style="plain" id="yFP-FX-UvI">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="kmK-PN-xfb">
+                    <navigationItem key="navigationItem" title="Gallery" id="FOb-je-y8p">
+                        <barButtonItem key="leftBarButtonItem" image="xmark" catalog="system" style="plain" id="xil-Ua-ef8">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="Gwo-c8-Sc5">
+                                <rect key="frame" x="16" y="10.666666666666664" width="87" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="xmark" catalog="system" title="">
+                                    <color key="baseForegroundColor" systemColor="systemRedColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="backToMain1:" destination="L25-KM-tJK" eventType="touchUpInside" id="Ljp-4u-dYk"/>
+                                    <action selector="backToMain:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HCK-HC-cm3"/>
+                                    <action selector="backToMain:" destination="L25-KM-tJK" eventType="touchUpInside" id="q9h-ZD-hMb"/>
+                                </connections>
+                            </button>
+                            <color key="tintColor" systemColor="systemRedColor"/>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="trash" catalog="system" style="plain" id="T9n-Kw-C6e">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="YCk-NE-iTH">
                                 <rect key="frame" x="290" y="10.666666666666664" width="87" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="trash" catalog="system">
+                                <buttonConfiguration key="configuration" style="plain" image="trash" catalog="system" title="">
                                     <color key="baseForegroundColor" systemColor="systemRedColor"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="trashPhoto:" destination="L25-KM-tJK" eventType="touchUpInside" id="alf-Cg-nmj"/>
+                                    <action selector="trashPhoto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ri2-OD-lcC"/>
+                                </connections>
                             </button>
+                            <color key="tintColor" systemColor="systemRedColor"/>
                         </barButtonItem>
                     </navigationItem>
                     <modalPageSheetSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -66,6 +87,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <exit id="L25-KM-tJK" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1661.8320610687022" y="-27.464788732394368"/>
         </scene>
@@ -107,7 +129,6 @@
                                 <buttonConfiguration key="configuration" style="plain" title="" buttonSize="large"/>
                                 <connections>
                                     <action selector="openGallery:" destination="dpu-Lv-0Fz" eventType="touchUpInside" id="oe7-Zh-fY1"/>
-                                    <segue destination="BYZ-38-t0r" kind="push" id="zgM-Bd-elJ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C5g-Cv-osj">

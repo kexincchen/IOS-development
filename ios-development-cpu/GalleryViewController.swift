@@ -13,6 +13,9 @@ class GalleryViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView?
     
     var gallery_photos: [UIImage] = []
+    var names_photo: [String] = ["photo1", "photo2", "photo3"]
+    
+    var num_photos: Int = 3
     
     
     override func viewDidLoad() {
@@ -26,6 +29,9 @@ class GalleryViewController: UIViewController {
            let image3 = UIImage(named: "photo3") {
            gallery_photos = [image1, image2, image3]
             
+        let textAttributes = [NSAttributedString.Key.foregroundColor:UIColor.red]
+        navigationController?.navigationBar.titleTextAttributes = textAttributes
+            
        }
 
     }
@@ -33,7 +39,7 @@ class GalleryViewController: UIViewController {
 
 extension GalleryViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        return num_photos
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -42,11 +48,11 @@ extension GalleryViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "REUSEABLECELL", for: indexPath) as! GalleryCell
         print("cell at index \(indexPath)")
 //        cell.textLabel?.text = "Cell \(indexPath)"
-//        if let image1 = UIImage(named: "photo1") {
-////            cell.updateImage(with: image1)
+        if let image1 = UIImage(named: names_photo[indexPath.row]) {
+//            cell.updateImage(with: image1)
 //            cell.imageView?.contentMode = .scaleAspectFill
-//            cell.imageView?.image = image1
-//        }
+            cell.imageView?.image = image1
+        }
         return cell
 
     }
@@ -55,9 +61,18 @@ extension GalleryViewController: UITableViewDataSource {
         return 1000
     }
     
+    @IBAction func trashPhoto(_ sender: Any) {
+        print("trash is clicked")
+    }
+    @IBAction func backToMain(_ sender: Any) {
+        
+        navigationController?.popViewController(animated: true)
+        
+        print("back is clicked")
+    }
+    
 }
 
 extension GalleryViewController: UITableViewDelegate {
     
-
 }

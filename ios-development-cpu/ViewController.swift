@@ -30,11 +30,25 @@ class ViewController: UIViewController {
         
 //        background?.image = UIImage(named: "photo1")
 
+
     }
     
 
     @IBAction func openGallery(_ sender: Any) {
         print("open gallery")
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "LISTVC")
+        
+        let transition = CATransition()
+            transition.duration = 0.5
+            transition.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
+            transition.type = CATransitionType.moveIn
+            transition.subtype = CATransitionSubtype.fromTop
+        self.navigationController?.view.layer.add(transition, forKey: nil)
+        
+        self.navigationController?.pushViewController(vc, animated: true)
+//        navigationController?.popViewController(animated: true)
+        
     }
     
     @IBAction func buttonPressed(_ sender: Any) {

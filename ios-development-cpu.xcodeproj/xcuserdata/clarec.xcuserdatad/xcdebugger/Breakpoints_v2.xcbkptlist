@@ -14,10 +14,10 @@
             filePath = "ios-development-cpu/GalleryViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "GalleryViewController"
+            landmarkType = "3">
             <Locations>
                <Location
                   uuid = "1CF16812-C14B-4795-BEAF-00708712B147 - 1f138e11491e44a5"

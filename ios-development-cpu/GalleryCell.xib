@@ -16,20 +16,20 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo1" translatesAutoresizingMaskIntoConstraints="NO" id="N0b-V5-zFm">
-                        <rect key="frame" x="20" y="11" width="353" height="832"/>
+                        <rect key="frame" x="-20" y="0.0" width="433" height="854"/>
                     </imageView>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="bottomMargin" secondItem="N0b-V5-zFm" secondAttribute="bottom" id="5dA-uB-dLS"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="N0b-V5-zFm" secondAttribute="trailing" id="9bL-10-ror"/>
-                    <constraint firstItem="N0b-V5-zFm" firstAttribute="leading" secondItem="gcc-N2-ieA" secondAttribute="leadingMargin" id="lBs-vX-g7r"/>
-                    <constraint firstItem="N0b-V5-zFm" firstAttribute="top" secondItem="gcc-N2-ieA" secondAttribute="topMargin" id="t9R-g7-Cfi"/>
+                    <constraint firstAttribute="trailing" secondItem="N0b-V5-zFm" secondAttribute="trailing" constant="-20" id="82t-1f-U7Z"/>
+                    <constraint firstItem="N0b-V5-zFm" firstAttribute="leading" secondItem="gcc-N2-ieA" secondAttribute="leading" constant="-20" id="Lxx-2b-KYu"/>
+                    <constraint firstAttribute="bottom" secondItem="N0b-V5-zFm" secondAttribute="bottom" id="VIz-90-W42"/>
+                    <constraint firstItem="N0b-V5-zFm" firstAttribute="top" secondItem="gcc-N2-ieA" secondAttribute="top" id="x7S-r6-xqr"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
                 <outlet property="imageView" destination="N0b-V5-zFm" id="yVG-Sp-ate"/>
             </connections>
-            <point key="canvasLocation" x="647" y="39"/>
+            <point key="canvasLocation" x="646.56488549618314" y="38.732394366197184"/>
         </tableViewCell>
     </objects>
     <resources>
