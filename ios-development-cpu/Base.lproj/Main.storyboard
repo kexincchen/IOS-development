@@ -139,9 +139,8 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title=""/>
                                 <connections>
-                                    <action selector="b:" destination="fbO-gS-CPZ" eventType="touchUpInside" id="ZWt-T2-mCI"/>
-                                    <action selector="buttonPressed:" destination="dpu-Lv-0Fz" eventType="touchUpInside" id="1Wi-hc-c1O"/>
-                                    <action selector="buttonPressing:" destination="dpu-Lv-0Fz" eventType="touchDown" id="gWe-EJ-IFX"/>
+                                    <action selector="pressedLike:" destination="dpu-Lv-0Fz" eventType="touchUpInside" id="Dw9-yt-Fmc"/>
+                                    <action selector="pressingLike:" destination="dpu-Lv-0Fz" eventType="touchDown" id="DDP-eE-bug"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DDf-WT-GqJ">
@@ -174,7 +173,6 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vOn-ek-03v" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="fbO-gS-CPZ" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="910.68702290076328" y="-27.464788732394368"/>
         </scene>

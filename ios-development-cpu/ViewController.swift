@@ -21,6 +21,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var button_like: UIButton?
     @IBOutlet weak var button_dislike: UIButton?
     
+    private let storeManager: UserDefaultManager = UserDefaultManager()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         button_like?.setImage(UIImage(named: icon_like), for: .normal)
@@ -51,12 +53,16 @@ class ViewController: UIViewController {
         
     }
     
-    @IBAction func buttonPressed(_ sender: Any) {
-        print("clicked")
+    @IBAction func pressedLike(_ sender: Any) {
+        print("clicked like")
         button_like?.setImage(UIImage(named: icon_like), for: .normal)
+        
+        // add the image into userDefault
+        storeManager.addPhoto(image: "Background")
     }
     
-    @IBAction func buttonPressing(_ sender: Any) {
+    @IBAction func pressingLike(_ sender: Any) {
+        print("pressing like")
         button_like?.setImage(UIImage(named: icon_like_pressed), for: .normal)
     }
     @IBAction func pressingDislike(_ sender: Any) {
@@ -67,5 +73,14 @@ class ViewController: UIViewController {
         print("pressed dislike")
     }
     
+    func loadPhotoFromURL(){
+        let url = URL(string: "")
+    }
+    
 }
 
+extension Array {
+    subscript(safe index: Int) -> Element? {
+        indices.contains(index) ? self[index] : nil
+    }
+}

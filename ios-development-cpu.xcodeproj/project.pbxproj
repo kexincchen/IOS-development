@@ -10,6 +10,7 @@
 		AF6E1AB22A66666D00164DAE /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6E1AB12A66666D00164DAE /* GalleryViewController.swift */; };
 		AF6E1AB42A666B2900164DAE /* GalleryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6E1AB32A666B2900164DAE /* GalleryCell.swift */; };
 		AF6E1AB82A666C1500164DAE /* GalleryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF6E1AB72A666C1500164DAE /* GalleryCell.xib */; };
+		AF6E1ABC2A6B684E00164DAE /* UserDefaultManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6E1ABB2A6B684E00164DAE /* UserDefaultManager.swift */; };
 		AFCC02AF2A5C1DB40038B681 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCC02AE2A5C1DB40038B681 /* AppDelegate.swift */; };
 		AFCC02B12A5C1DB40038B681 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCC02B02A5C1DB40038B681 /* SceneDelegate.swift */; };
 		AFCC02B32A5C1DB40038B681 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCC02B22A5C1DB40038B681 /* ViewController.swift */; };
@@ -22,6 +23,7 @@
 		AF6E1AB12A66666D00164DAE /* GalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
 		AF6E1AB32A666B2900164DAE /* GalleryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCell.swift; sourceTree = "<group>"; };
 		AF6E1AB72A666C1500164DAE /* GalleryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GalleryCell.xib; sourceTree = "<group>"; };
+		AF6E1ABB2A6B684E00164DAE /* UserDefaultManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultManager.swift; sourceTree = "<group>"; };
 		AFCC02AB2A5C1DB40038B681 /* ios-development-cpu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-development-cpu.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFCC02AE2A5C1DB40038B681 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AFCC02B02A5C1DB40038B681 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				AFCC02B02A5C1DB40038B681 /* SceneDelegate.swift */,
 				AFCC02B22A5C1DB40038B681 /* ViewController.swift */,
 				AF6E1AB12A66666D00164DAE /* GalleryViewController.swift */,
+				AF6E1ABB2A6B684E00164DAE /* UserDefaultManager.swift */,
 				AF6E1AB32A666B2900164DAE /* GalleryCell.swift */,
 				AFCC02B42A5C1DB40038B681 /* Main.storyboard */,
 				AF6E1AB72A666C1500164DAE /* GalleryCell.xib */,
@@ -148,6 +151,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF6E1ABC2A6B684E00164DAE /* UserDefaultManager.swift in Sources */,
 				AFCC02B32A5C1DB40038B681 /* ViewController.swift in Sources */,
 				AF6E1AB42A666B2900164DAE /* GalleryCell.swift in Sources */,
 				AF6E1AB22A66666D00164DAE /* GalleryViewController.swift in Sources */,

@@ -13,8 +13,17 @@ class GalleryViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView?
     
     var gallery_photos: [UIImage] = []
-    var names_photo: [String] = ["photo1", "photo2", "photo3"]
+//    var names_photo: [String] = ["photo1", "photo2", "photo3"]
     var num_photos: Int = 3
+    
+    private let storeManager: UserDefaultManager = UserDefaultManager()
+    
+    var names_photo: [String] = []
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.names_photo = storeManager.getPhotos() ?? []
+    }
     
     
     override func viewDidLoad() {
@@ -67,6 +76,13 @@ extension GalleryViewController: UITableViewDataSource {
     // TODO：跳出提示框
     @IBAction func trashPhoto(_ sender: Any) {
         print("trash is clicked")
+        // 触发删除函数
+        // TODO: 如何知道当前的cell row？
+//        self.names_photo.remove(at: indexPath.row)
+//        self.tableView?.reloadData()
+//        let alert = UIAlertController(title: "Success", message: "Image deleted!", preferredStyle: .alert)
+//        alert.addAction(.init(title: "OK", style: .cancel))
+//        self.present(alert, animated: true)
     }
     
     // 自定义返回键
@@ -85,9 +101,14 @@ extension GalleryViewController: UITableViewDelegate {
             print("Delete clicked")
             self.names_photo.remove(at: indexPath.row)
             self.tableView?.reloadData()
+            let alert = UIAlertController(title: "Success", message: "Image deleted!", preferredStyle: .alert)
+            alert.addAction(.init(title: "OK", style: .cancel))
+            self.present(alert, animated: true)
             completion(true)
+        
         })
         let config = UISwipeActionsConfiguration(actions: [action])
         return config
     }
 }
+
